@@ -1,12 +1,12 @@
-import React from 'react';
-import './index.scss';
+import { type FC } from "react"
+import "./index.scss"
 
-function App() {
-  return (
-    <div className="App">
-      Привет
-    </div>
-  );
+const App: FC = () => {
+    return (
+        <div className="App">
+          Привет
+        </div>
+    )
 }
 
-export default App;
+export default App
