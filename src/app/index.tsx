@@ -1,13 +1,12 @@
+import Routing from "pages"
 import { type FC } from "react"
-import { Input } from "shared/ui"
 import "./index.scss"
+import { withProviders } from "./providers/index"
 
 const App: FC = () => {
     return (
-        <>
-            <Input />
-        </>
+        <Routing />
     )
 }
 
-export default App
+export default withProviders(App)
