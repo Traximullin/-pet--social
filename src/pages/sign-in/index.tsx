@@ -1,10 +1,13 @@
 import { type FC } from "react"
 import { SignLayout } from "shared/layout"
+import { Form } from "shared/ui"
 
 const SignInPage: FC = () => {
     return (
         <SignLayout>
-            Привет
+            <Form>
+                1
+            </Form>
         </SignLayout>
     )
 }
