@@ -1,16 +1,11 @@
 import { type FC } from "react"
 import { SignLayout } from "shared/layout"
-import { Button, Form, Text } from "shared/ui"
+import { SignInForm } from "entities/sign-in/form"
 
 const SignInPage: FC = () => {
     return (
         <SignLayout>
-            <Form>
-                <Text.Header position="center">Войти</Text.Header>
-                <Button>
-                    Привет
-                </Button>
-            </Form>
+            <SignInForm />
         </SignLayout>
     )
 }

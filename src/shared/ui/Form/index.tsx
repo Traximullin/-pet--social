@@ -3,10 +3,14 @@ import "./index.scss"
 import { type IForm } from "./interface"
 
 const Form: FC<IForm> = (props) => {
-    const { ...othersProps } = props
+    const { className, ...othersProps } = props
+
+    const currentClasses = ["form"]
+
+    if (className) currentClasses.push(className)
 
     return (
-        <form className="form" {...othersProps} />
+        <form className={currentClasses.join(" ")} {...othersProps} />
     )
 }
 
