@@ -1,12 +1,12 @@
 import { type FC } from "react"
 import { SignLayout } from "shared/layout"
-import { Form } from "shared/ui"
+import { Form, Text } from "shared/ui"
 
 const SignInPage: FC = () => {
     return (
         <SignLayout>
             <Form>
-                1
+                <Text.Header position="center">Войти</Text.Header>
             </Form>
         </SignLayout>
     )
