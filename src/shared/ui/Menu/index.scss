@@ -1,0 +1,21 @@
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid black;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        height: var(--menu-height);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+}
