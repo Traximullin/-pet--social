@@ -1,10 +1,11 @@
 import { type FC } from "react"
+import { BaseLayout } from "shared/layout"
 
 const HomePage: FC = () => {
     return (
-        <div>
+        <BaseLayout>
             Home Page
-        </div>
+        </BaseLayout>
     )
 }
 
