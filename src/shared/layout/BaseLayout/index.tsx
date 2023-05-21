@@ -8,7 +8,9 @@ const BaseLayout: FC<IBaseLayout> = (props) => {
 
     return (
         <main className="base-layout" {...othersProps}>
-            {children}
+            <div className="base-layout__content">
+                {children}
+            </div>
             <Menu />
         </main>
     )

@@ -5,11 +5,11 @@ const Menu: FC = () => {
     return (
         <div className="menu">
             <nav>
-                <ul>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
-                    <li>1</li>
+                <ul className="menu__list">
+                    <li className="menu__item">1</li>
+                    <li className="menu__item">1</li>
+                    <li className="menu__item">1</li>
+                    <li className="menu__item">1</li>
                 </ul>
             </nav>
         </div>
