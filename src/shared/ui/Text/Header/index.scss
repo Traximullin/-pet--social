@@ -1,0 +1,10 @@
+.text-header {
+    font-size: 24px;
+    font-weight: bolder;
+
+    &_position {
+        &_center {
+            text-align: center;
+        }
+    }
+}
