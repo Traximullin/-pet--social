@@ -1,11 +1,13 @@
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Avatar } from "shared/ui"
+import { Avatar, Content } from "shared/ui"
 
 const ProfilePage: FC = () => {
     return (
         <BaseLayout>
-            <Avatar />
+            <Content>
+                <Avatar />
+            </Content>
         </BaseLayout>
     )
 }
