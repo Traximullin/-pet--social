@@ -1,5 +1,7 @@
 import { type FC } from "react"
+import { NavLink } from "react-router-dom"
 import "./index.scss"
+import { EPage } from "pages/pages"
 
 const Menu: FC = () => {
     return (
@@ -9,7 +11,11 @@ const Menu: FC = () => {
                     <li className="menu__item">1</li>
                     <li className="menu__item">1</li>
                     <li className="menu__item">1</li>
-                    <li className="menu__item">1</li>
+                    <li className="menu__item">
+                        <NavLink to={EPage.PROFILE}>
+                            Профиль
+                        </NavLink>
+                    </li>
                 </ul>
             </nav>
         </div>
