@@ -1,7 +1,7 @@
 import { ProfileCounter } from "entities/profile/ui"
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Avatar, Content, Space, Text } from "shared/ui"
+import { Avatar, Content, Media, Space, Text } from "shared/ui"
 
 const ProfilePage: FC = () => {
     return (
@@ -23,6 +23,14 @@ const ProfilePage: FC = () => {
                     <p>Test</p>
                 </Space>
             </Content>
+            <Space gap="1px" flexWrap="wrap">
+                <Media />
+                <Media />
+                <Media />
+                <Media />
+                <Media />
+                <Media />
+            </Space>
         </BaseLayout>
     )
 }
