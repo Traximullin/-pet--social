@@ -1,38 +1,38 @@
 import { type FC } from "react"
 import "./index.scss"
-import { useNavigate } from "react-router"
 import { EPage } from "pages/pages"
+import { useNavigate } from "react-router-dom"
 import { Button, Form, Input, Text } from "shared/ui"
 
-const SignInForm: FC = () => {
+const SignUpForm: FC = () => {
     const navigation = useNavigate()
 
     const handleSignInClick = (): void => {
-        navigation(EPage.HOME)
+        navigation(EPage.LOGIN)
     }
 
     const handleAdditionClick = (): void => {
-        navigation(EPage.REGISTATION)
+        navigation(EPage.LOGIN)
     }
 
     return (
-        <Form className="sign-in-form">
+        <Form className="sign-up-form">
             <Text.Header position="center">
-                Sign In
+                Sign Up
             </Text.Header>
-            <div className="sign-in-form__data">
+            <div className="sign-up-form__data">
                 <Input placeholder="login"/>
                 <Input placeholder="password" type="password" />
                 <p
                     className="sign-up-form__addition"
                     onClick={handleAdditionClick}
                 >
-                    i dont have an account
+                    i already have an account
                 </p>
             </div>
-            <Button onClick={handleSignInClick}>Sign In</Button>
+            <Button onClick={handleSignInClick}>Sign Up</Button>
         </Form>
     )
 }
 
-export default SignInForm
+export default SignUpForm
