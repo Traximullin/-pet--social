@@ -1,11 +1,12 @@
 import { ProfileCounter } from "entities/profile/ui"
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Avatar, Content, Grid, Media, Space, Text } from "shared/ui"
+import { Avatar, Content, Grid, Media, Onboarding, Space, Text } from "shared/ui"
 
 const ProfilePage: FC = () => {
     return (
         <BaseLayout>
+            <Onboarding />
             <Content>
                 <Space gap="32px" alignItems="center">
                     <Avatar />
