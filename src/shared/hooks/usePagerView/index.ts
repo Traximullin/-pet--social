@@ -2,6 +2,8 @@ import { useState } from "react"
 import { type IUsePageView } from "./interface"
 
 const usePagerView = (): IUsePageView => {
+    // const pagerViewRef = useRef<null>(null)
+
     const [step, setStep] = useState(0)
 
     const handleSwitchPage = (): void => {
@@ -11,6 +13,7 @@ const usePagerView = (): IUsePageView => {
     return {
         step,
         handleSwitchPage,
+        // pagerViewRef,
     }
 }
 

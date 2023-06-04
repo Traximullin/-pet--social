@@ -1,14 +1,18 @@
-import { type FC } from "react"
+import { forwardRef, type FC } from "react"
+import "./index.scss"
 import { type IPager } from "./interface"
 
-const Pager: FC<IPager> = (props) => {
-    const { children, step, ...othersProps } = props
+const Pager: FC<IPager> = forwardRef((props: IPager, ref) => {
+    const { children, step, bottomElement, ...othersProps } = props
 
     return (
-        <section {...othersProps}>
+        <section className="pager" {...othersProps}>
             {children[step]}
+            {bottomElement}
         </section>
     )
-}
+})
+
+Pager.displayName = "Pager"
 
 export default Pager
