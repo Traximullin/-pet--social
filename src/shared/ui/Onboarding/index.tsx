@@ -3,6 +3,8 @@ import "./index.scss"
 import { type IOnboarding } from "./interface"
 import Pager from "../Pager"
 import { usePagerView } from "shared/hooks"
+import Button from "../Button"
+import { OnboardingLayout } from "shared/layout"
 
 const Onboarding: FC<IOnboarding> = (props) => {
     const { ...othersProps } = props
@@ -10,12 +12,15 @@ const Onboarding: FC<IOnboarding> = (props) => {
 
     return (
         <div className="onboarding" {...othersProps}>
-            <button onClick={() => { handleSwitchPage() }}>TEST</button>
-            <Pager {...pager}>
-                <p>Test1</p>
-                <p>Test2</p>
-                <p>Test3</p>
-                <p>Test4</p>
+            <Pager {...pager}
+                bottomElement={
+                    <Button onClick={handleSwitchPage}>Далее</Button>
+                }
+            >
+                <OnboardingLayout>1</OnboardingLayout>
+                <OnboardingLayout>2</OnboardingLayout>
+                <OnboardingLayout>3</OnboardingLayout>
+                <OnboardingLayout>4</OnboardingLayout>
             </Pager>
         </div>
     )
