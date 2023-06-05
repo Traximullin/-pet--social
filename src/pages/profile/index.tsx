@@ -6,7 +6,7 @@ import { Avatar, Content, Grid, Media, Onboarding, Space, Text } from "shared/ui
 const ProfilePage: FC = () => {
     return (
         <BaseLayout>
-            <Onboarding />
+            {/* <Onboarding /> */}
             <Content>
                 <Space gap="32px" alignItems="center">
                     <Avatar />
