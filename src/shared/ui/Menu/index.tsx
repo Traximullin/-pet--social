@@ -8,7 +8,11 @@ const Menu: FC = () => {
         <div className="menu">
             <nav>
                 <ul className="menu__list">
-                    <li className="menu__item">1</li>
+                    <li className="menu__item">
+                        <NavLink to={EPage.HOME}>
+                            Главная
+                        </NavLink>
+                    </li>
                     <li className="menu__item">1</li>
                     <li className="menu__item">1</li>
                     <li className="menu__item">
