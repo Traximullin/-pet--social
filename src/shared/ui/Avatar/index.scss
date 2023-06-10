@@ -4,4 +4,11 @@
     border: 1px solid black;
     padding: 2px;
     object-fit: cover;
+
+    &_size {
+        &_small {
+            width: 32px;
+            height: 32px;
+        }
+    }
 }
