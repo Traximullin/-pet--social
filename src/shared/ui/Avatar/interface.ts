@@ -1,4 +1,5 @@
+import { type ImgHTMLAttributes } from "react"
 
-export interface IAvatar {
-
+export interface IAvatar extends ImgHTMLAttributes<HTMLImageElement> {
+    size?: "small"
 }
