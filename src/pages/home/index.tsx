@@ -1,14 +1,17 @@
 import { TapeCard } from "entities/tape/ui"
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Space } from "shared/ui"
+import { List } from "shared/ui"
 
 const HomePage: FC = () => {
     return (
         <BaseLayout>
-            <Space flexDirection="column" gap="1rem">
-                <TapeCard>Test</TapeCard>
-            </Space>
+            <List
+                data={[1, 2, 3, 4]}
+                renderItem={(item) => (
+                    <TapeCard>{item}</TapeCard>
+                )}
+            />
         </BaseLayout>
     )
 }

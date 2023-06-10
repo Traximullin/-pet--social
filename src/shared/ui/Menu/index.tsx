@@ -13,7 +13,11 @@ const Menu: FC = () => {
                             Главная
                         </NavLink>
                     </li>
-                    <li className="menu__item">1</li>
+                    <li className="menu__item">
+                        <NavLink to={EPage.TREE}>
+                            Дерево
+                        </NavLink>
+                    </li>
                     <li className="menu__item">1</li>
                     <li className="menu__item">
                         <NavLink to={EPage.PROFILE}>
