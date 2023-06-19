@@ -1,0 +1,27 @@
+text {
+    font-size: 14px;
+    fill: #666;
+    cursor: pointer;
+  }
+  
+  text:hover {
+    fill: #000ccc;
+  }
+  
+  rect {
+    width: 100px;
+    height: 25px;
+    fill: #fff;
+    stroke: #ccc;
+  }
+  
+  line {
+    stroke: #ccc;
+    stroke-width: 2;
+  }
+  
+  path {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2;
+  }
