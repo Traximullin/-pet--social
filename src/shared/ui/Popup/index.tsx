@@ -4,7 +4,12 @@ import "./index.scss"
 const Popup: FC = () => {
     return (
         <div className="popup">
-            Popup
+            <div className="popup__header">
+                Header
+            </div>
+            <div className="popup__content">
+                Popup
+            </div>
         </div>
     )
 }

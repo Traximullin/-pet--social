@@ -5,8 +5,18 @@
     background-color: white;
     border-radius: 16px 16px 0 0;
     box-shadow: 0 -5px 5px -5px #333;
-    padding: 12px;
     height: 50vh;
     width: 100%;
     z-index: 1;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+        border-bottom: 1px solid black;
+    }
+
+    &__content {
+        padding: 12px;
+    }
 }
