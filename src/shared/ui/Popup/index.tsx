@@ -1,14 +1,17 @@
 import { type FC } from "react"
 import "./index.scss"
+import { type IPopup } from "./interface"
 
-const Popup: FC = () => {
+const Popup: FC<IPopup> = (props) => {
+    const { children, } = props
+
     return (
         <div className="popup">
             <div className="popup__header">
                 Header
             </div>
             <div className="popup__content">
-                Popup
+                {children}
             </div>
         </div>
     )
