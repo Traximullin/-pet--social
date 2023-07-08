@@ -1,12 +1,12 @@
-import { TreeItem } from "entities/tree/ui"
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Tree } from "shared/ui"
+import { Tree } from "entities/tree/ui"
 
 const TreePage: FC = () => {
+
     return (
         <BaseLayout>
-            <TreeItem />
+            <Tree />
         </BaseLayout>
     )
 }
