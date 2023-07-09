@@ -1,5 +1,12 @@
-import { type HTMLAttributes } from "react"
+import { type ReactElement } from "react"
 
-export interface ISwitch extends HTMLAttributes<HTMLElement> {
+// !TODO прописать тип для content
 
+interface ISwitchItem {
+    name: string
+    component: ReactElement
+}
+
+export interface ISwitch {
+    content?: any
 }
