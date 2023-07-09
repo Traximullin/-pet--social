@@ -3,26 +3,29 @@ import "./index.scss"
 import { type ISwitch } from "./interface"
 import useSwitch from "shared/hooks/useSwitch"
 
-const data = [
-    <div key="1">1</div>,
-    <div key="2">2</div>,
-    <div key="3">3</div>
-]
+const Switch: FC<ISwitch> = (props) => {
+    const { content, } = props
 
-const Switch: FC<ISwitch> = () => {
-    const { currentPage, } = useSwitch()
-
-    const step = 0
+    const { currentPage, handleSwitchPage, } = useSwitch()
 
     return (
         <section className="switch">
             <div className="switch__header">
-                <div>Card 1</div>
-                <div>Card 2</div>
-                <div>Card 3</div>
+                {/* !TODO Вынести в отдельный компонент */}
+                {
+                    Object
+                        .keys(content)
+                        .map((item, index) => (
+                            <div
+                                key={`heade-item-${index}`}
+                                onClick={() => { handleSwitchPage(item) }}
+                            >
+                                {item}
+                            </div>
+                        ))
+                }
             </div>
             <div className="switch__content">
-                {data[step]}
             </div>
         </section>
     )

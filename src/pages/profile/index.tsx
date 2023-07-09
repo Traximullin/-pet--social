@@ -23,9 +23,11 @@ const ProfilePage: FC = () => {
                     <p>Test</p>
                 </Space>
             </Content>
-            <Switch>
-                Test
-            </Switch>
+            <Switch content={{
+                name: <div>1</div>,
+                name1: <div>1</div>,
+                name2: <div>1</div>,
+            }}/>
             <Grid gap="1px" gridTemplateColumns="repeat(3,1fr)">
                 <Media />
                 <Media />
