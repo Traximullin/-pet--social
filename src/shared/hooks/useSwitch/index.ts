@@ -1,8 +1,8 @@
 import { useState } from "react"
 import { type IUseSwitch } from "./interface"
 
-const useSwitch = (): IUseSwitch => {
-    const [currentPage, setCurrentPage] = useState("default")
+const useSwitch = (defaultValue: string): IUseSwitch => {
+    const [currentPage, setCurrentPage] = useState(defaultValue)
 
     const handleSwitchPage = (page: string): void => {
         setCurrentPage(page)

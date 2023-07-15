@@ -2,30 +2,22 @@ import { type FC } from "react"
 import "./index.scss"
 import { type ISwitch } from "./interface"
 import useSwitch from "shared/hooks/useSwitch"
+import SwitchHeader from "./components/SwitchHeader"
 
 const Switch: FC<ISwitch> = (props) => {
     const { content, } = props
 
-    const { currentPage, handleSwitchPage, } = useSwitch()
+    // TODO продумать как пробрасывать defaultValue
+    const { currentPage, handleSwitchPage, } = useSwitch("list")
 
     return (
         <section className="switch">
-            <div className="switch__header">
-                {/* !TODO Вынести в отдельный компонент */}
-                {
-                    Object
-                        .keys(content)
-                        .map((item, index) => (
-                            <div
-                                key={`heade-item-${index}`}
-                                onClick={() => { handleSwitchPage(item) }}
-                            >
-                                {item}
-                            </div>
-                        ))
-                }
-            </div>
+            <SwitchHeader
+                content={content}
+                handleSwitchPage={handleSwitchPage}
+            />
             <div className="switch__content">
+                {content[currentPage]}
             </div>
         </section>
     )
