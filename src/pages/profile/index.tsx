@@ -1,7 +1,8 @@
 import { ProfileCounter } from "entities/profile/ui"
+import { TapeCard } from "entities/tape/ui"
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Avatar, Content, Grid, Media, Space, Switch, Text } from "shared/ui"
+import { Avatar, Content, Grid, List, Media, Space, Switch, Text } from "shared/ui"
 
 const ProfilePage: FC = () => {
     return (
@@ -33,7 +34,13 @@ const ProfilePage: FC = () => {
                     <Media />
                     <Media />
                 </Grid>,
-                trip: <div>2</div>,
+                trip:
+                <List
+                    data={[1, 2, 3, 4]}
+                    renderItem={(item) => (
+                        <TapeCard>{item}</TapeCard>
+                    )}
+                />,
                 card: <div>3</div>,
             }}/>
         </BaseLayout>
