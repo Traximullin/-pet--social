@@ -1,12 +1,6 @@
-import { type ReactElement } from "react"
 
-// !TODO прописать тип для content
-
-interface ISwitchItem {
-    name: string
-    component: ReactElement
-}
+export type TSwitchItem = Record<string, JSX.Element>
 
 export interface ISwitch {
-    content?: any
+    content: TSwitchItem
 }

@@ -24,18 +24,18 @@ const ProfilePage: FC = () => {
                 </Space>
             </Content>
             <Switch content={{
-                name: <div>1</div>,
-                name1: <div>1</div>,
-                name2: <div>1</div>,
+                list:
+                <Grid gap="1px" gridTemplateColumns="repeat(3,1fr)">
+                    <Media />
+                    <Media />
+                    <Media />
+                    <Media />
+                    <Media />
+                    <Media />
+                </Grid>,
+                trip: <div>2</div>,
+                card: <div>3</div>,
             }}/>
-            <Grid gap="1px" gridTemplateColumns="repeat(3,1fr)">
-                <Media />
-                <Media />
-                <Media />
-                <Media />
-                <Media />
-                <Media />
-            </Grid>
         </BaseLayout>
     )
 }
