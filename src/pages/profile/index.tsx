@@ -1,3 +1,4 @@
+import { AchievementsCard } from "entities/achievements/ui"
 import { ProfileCounter } from "entities/profile/ui"
 import { TapeCard } from "entities/tape/ui"
 import { type FC } from "react"
@@ -41,7 +42,9 @@ const ProfilePage: FC = () => {
                         <TapeCard>{item}</TapeCard>
                     )}
                 />,
-                card: <div>3</div>,
+                card: <div>
+                    <AchievementsCard>Achievements</AchievementsCard>
+                </div>,
             }}/>
         </BaseLayout>
     )
