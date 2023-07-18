@@ -3,7 +3,7 @@ import { ProfileCounter } from "entities/profile/ui"
 import { TapeCard } from "entities/tape/ui"
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Avatar, Content, Grid, List, Media, Space, Switch, Text } from "shared/ui"
+import { Avatar, Button, Content, Grid, List, Media, Space, Switch, Text } from "shared/ui"
 
 const ProfilePage: FC = () => {
     return (
