@@ -23,6 +23,7 @@ const ProfilePage: FC = () => {
                 <Space gap="8px" flexDirection="column">
                     <Text.Title>Ivan Ivanov</Text.Title>
                     <p>Test</p>
+                    <Button size="small">Add content</Button>
                 </Space>
             </Content>
             <Switch content={{
