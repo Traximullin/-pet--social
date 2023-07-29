@@ -1,7 +1,7 @@
-import { useRef, type FC, useEffect } from "react"
-import "./index.scss"
+import { useEffect, useRef } from "react"
+import { type TUseCamera } from "./interface"
 
-const Camera: FC = () => {
+const useCamera: TUseCamera = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null)
 
     useEffect(() => {
@@ -31,14 +31,7 @@ const Camera: FC = () => {
         }
     }, [])
 
-    return (
-        <div className="test">
-            <video
-                preload="none"
-                ref={videoRef}
-            />
-        </div>
-    )
+    return videoRef
 }
 
-export default Camera
+export default useCamera
