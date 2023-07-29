@@ -1,7 +1,7 @@
-import { useRef, type FC, useEffect } from "react"
-import "./index.scss"
+import { useEffect, useRef } from "react"
+import { type TUseCamera } from "./interface"
 
-const Test: FC = () => {
+const useCamera: TUseCamera = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null)
 
     useEffect(() => {
@@ -11,8 +11,9 @@ const Test: FC = () => {
             .then((stream) => {
                 if (videoRef.current) {
                     videoRef.current.srcObject = stream
-                    // eslint-disable-next-line @typescript-eslint/no-floating-promises
-                    videoRef.current.play()
+                    videoRef.current.addEventListener("loadedmetadata", () => {
+                        void videoRef.current?.play()
+                    })
                 }
             })
             .catch((error) => {
@@ -22,21 +23,15 @@ const Test: FC = () => {
         return () => {
             if (videoRef.current) {
                 const stream = videoRef.current.srcObject as MediaStream
-                const tracks = stream.getTracks()
-                tracks.forEach((track) => {
+                const tracks = stream?.getTracks()
+                tracks?.forEach((track) => {
                     track.stop()
                 })
             }
         }
     }, [])
 
-    return (
-        <div className="test">
-            <video
-                ref={videoRef}
-            />
-        </div>
-    )
+    return videoRef
 }
 
-export default Test
+export default useCamera

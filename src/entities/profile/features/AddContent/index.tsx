@@ -1,10 +1,13 @@
+import { EPage } from "pages/pages"
 import { type FC } from "react"
+import { useNavigate } from "react-router"
 import { Button } from "shared/ui"
 
 const AddContent: FC = () => {
+    const navigation = useNavigate()
 
     const handleAddContentClick = (): void => {
-        alert("Add content!")
+        navigation(EPage.CREATE_CONTENT)
     }
 
     return (
