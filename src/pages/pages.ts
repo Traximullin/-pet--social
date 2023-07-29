@@ -11,5 +11,6 @@ export enum EPage {
     REGISTATION = "/registration",
     PROFILE = "/profile",
     TREE = "/tree",
-    CONTENT = "/content"
+    CONTENT = "/content",
+    CREATE_CONTENT = "/content/create",
 }
