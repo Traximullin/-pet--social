@@ -6,8 +6,9 @@ const Camera: FC = () => {
     const videoRef = useCamera()
 
     return (
-        <div className="test">
+        <div className="camera">
             <video
+                className="camera__video"
                 preload="none"
                 ref={videoRef}
             />
