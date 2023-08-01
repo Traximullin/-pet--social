@@ -11,6 +11,9 @@ const ContentLayout: FC<IContentLayout> = (props) => {
                 {backButton}
             </section>
             {children}
+            <section className="content-layout__bottom">
+                Привет
+            </section>
         </main>
     )
 }
