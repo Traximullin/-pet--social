@@ -3,7 +3,7 @@ import "./index.scss"
 import { type IContentLayout } from "./interface"
 
 const ContentLayout: FC<IContentLayout> = (props) => {
-    const { children, backButton, ...othersProps } = props
+    const { children, backButton, control, ...othersProps } = props
 
     return (
         <main className="content-layout" {...othersProps}>
@@ -11,8 +11,8 @@ const ContentLayout: FC<IContentLayout> = (props) => {
                 {backButton}
             </section>
             {children}
-            <section className="content-layout__bottom">
-                Привет
+            <section className="content-layout__control">
+                {control}
             </section>
         </main>
     )
