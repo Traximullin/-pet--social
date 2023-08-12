@@ -1,6 +1,8 @@
 .base-layout {
-    height: 100%;
+    height: max-content;
+    min-height: 100%;
     width: 100%;
+    background-color: var(--colors-ui-background);
 
     &__content {
         padding-top: 32px;
