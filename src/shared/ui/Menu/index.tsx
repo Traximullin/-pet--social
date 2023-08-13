@@ -18,7 +18,16 @@ const Menu: FC = () => {
                             Дерево
                         </NavLink>
                     </li>
-                    <li className="menu__item">1</li>
+                    <li className="menu__item">
+                        <NavLink to={EPage.CREATE_CONTENT}>
+                            Создать
+                        </NavLink>
+                    </li>
+                    <li className="menu__item">
+                        <NavLink to={EPage.TREE}>
+                            Сообщения
+                        </NavLink>
+                    </li>
                     <li className="menu__item">
                         <NavLink to={EPage.PROFILE}>
                             Профиль

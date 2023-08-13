@@ -3,7 +3,7 @@ import "./index.scss"
 import { type ITapeCard } from "./interface"
 
 import Card from "shared/ui/Card"
-import { Avatar, Media, Text } from "shared/ui"
+import { Avatar, Details, Media, Text } from "shared/ui"
 import Like from "shared/ui/Like"
 
 const TapeCard: FC<ITapeCard> = (props) => {
@@ -12,14 +12,17 @@ const TapeCard: FC<ITapeCard> = (props) => {
     return (
         <Card className="tape-card" {...othersProps}>
             <div className="tape-card__header">
-                <Avatar size="small" />
                 <div className="tape-card__user-info">
-                    <Text.Title>test_1337</Text.Title>
-                    <Text.Title className="tape-card__role">Author</Text.Title>
+                    <Avatar size="small" />
+                    <div className="tape-card__username">
+                        <Text.Title>test_1337</Text.Title>
+                        <Text.Title className="tape-card__role">Author</Text.Title>
+                    </div>
                 </div>
+                <Details />
             </div>
             <Media/>
-            <div className="tape-card__bottom">
+            <div className="tape-card__control">
                 <Like/>
                 <div>1</div>
             </div>

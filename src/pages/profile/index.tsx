@@ -4,7 +4,6 @@ import { Avatar, Content, Grid, List, Media, Space, Switch, Text } from "shared/
 import { AchievementsCard } from "entities/achievements/ui"
 import { ProfileCounter } from "entities/profile/ui"
 import { TapeCard } from "entities/tape/ui"
-import { AddContent } from "entities/profile/features"
 
 const ProfilePage: FC = () => {
     return (
@@ -24,7 +23,6 @@ const ProfilePage: FC = () => {
                 <Space gap="8px" flexDirection="column">
                     <Text.Title>Ivan Ivanov</Text.Title>
                     <p>Test</p>
-                    <AddContent />
                 </Space>
             </Content>
             <Switch content={{
