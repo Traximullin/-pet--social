@@ -22,7 +22,7 @@ const TapeCard: FC<ITapeCard> = (props) => {
                 <Details />
             </div>
             <Media/>
-            <div className="tape-card__bottom">
+            <div className="tape-card__control">
                 <Like/>
                 <div>1</div>
             </div>
