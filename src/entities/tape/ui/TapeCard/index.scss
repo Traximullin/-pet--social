@@ -3,15 +3,21 @@
 
     &__header {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 0.5em;
         padding: 0 12px 6px 12px;
+    }
+
+    &__username {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
     }
 
     &__user-info {
         display: flex;
-        flex-direction: column;
-        gap: 6px;
+        align-items: center;
+        gap: 10px;
     }
 
     &__role {
