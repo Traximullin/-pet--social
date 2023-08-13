@@ -6,7 +6,7 @@
     max-width: 120px;
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 4px var(--colors-ui-primary);
 
     &__avatar {
         object-fit: cover;
