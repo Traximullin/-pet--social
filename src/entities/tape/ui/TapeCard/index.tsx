@@ -3,8 +3,7 @@ import "./index.scss"
 import { type ITapeCard } from "./interface"
 
 import Card from "shared/ui/Card"
-import { Avatar, Details, Media, Text } from "shared/ui"
-import Like from "shared/ui/Like"
+import { Avatar, CommentIcon, Details, Like, Media, Text } from "shared/ui"
 
 const TapeCard: FC<ITapeCard> = (props) => {
     const { children, ...othersProps } = props
@@ -24,7 +23,7 @@ const TapeCard: FC<ITapeCard> = (props) => {
             <Media/>
             <div className="tape-card__control">
                 <Like/>
-                <div>1</div>
+                <CommentIcon />
             </div>
         </Card>
     )
