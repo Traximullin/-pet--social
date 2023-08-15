@@ -2,6 +2,11 @@
 .switch-header {
     display: flex;
     justify-content: space-between;
-    padding: 12px 0;
-    border-bottom: 1px solid black;
+    padding: 1em 2em;
+    margin: 1em 2em;
+    border-radius: 6px;
+
+    text-transform: uppercase;
+    border: 1px solid var(--colors-ui-background-secondary);
+    color: var(--colors-ui-deactive);
 }
