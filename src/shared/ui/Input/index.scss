@@ -1,6 +1,11 @@
 .input {
-    padding: 7px;
+    padding: 8px 16px;
     width: 100%;
-    border: 1px solid black;
     border-radius: 7px;
+    background-color: var(--colors-ui-background-secondary);
+    color: var(--colors-ui-text);
+
+    &::placeholder {
+        color: var(--colors-ui-deactive);
+    }
 }
