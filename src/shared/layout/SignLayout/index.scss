@@ -5,4 +5,21 @@
     align-items: center;
     justify-content: center;
     background-color: var(--colors-ui-background);
+
+    &__circle {
+        background-color: var(--colors-ui-primary);
+        border-radius: 50%;
+        z-index: 1;
+        width: 60vw;
+        height: 35vh;
+        position: absolute;
+        top: -80px;
+        left: -40px;
+        opacity: .1;
+        filter: blur(80px);
+    }
+
+    &__content {
+        z-index: 2;
+    }
 }
