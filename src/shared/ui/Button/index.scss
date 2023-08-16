@@ -2,10 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px;
     width: 100%;
-    border: 1px solid #000000;
-    background: none;
+    padding: 12px;
+    
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--colors-ui-text);
+    background-color: var(--colors-ui-primary);
     border-radius: 7px;
 
     &_sz {
