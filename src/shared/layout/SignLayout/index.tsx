@@ -7,7 +7,8 @@ const SignLayout: FC<ISignLayout> = (props) => {
 
     return (
         <main className="sign-layout" {...othersProps}>
-            <div className="sign-layout__circle" />
+            <div className="sign-layout__blue-circle" />
+            <div className="sign-layout__red-circle" />
             <div className="sign-layout__content">
                 {children}
             </div>

@@ -6,17 +6,26 @@
     justify-content: center;
     background-color: var(--colors-ui-background);
 
-    &__circle {
-        background-color: var(--colors-ui-primary);
-        border-radius: 50%;
-        z-index: 1;
+    &__red-circle, &__blue-circle {
         width: 60vw;
         height: 35vh;
+        z-index: 1;
+        border-radius: 50%;
         position: absolute;
-        top: -80px;
-        left: -40px;
         opacity: .1;
         filter: blur(80px);
+    }
+
+    &__red-circle {
+        background-color: var(--colors-ui-secondary);
+        bottom: -80px;
+        right: -40px;
+    }
+
+    &__blue-circle {
+        background-color: var(--colors-ui-primary);
+        top: -80px;
+        left: -40px;
     }
 
     &__content {
