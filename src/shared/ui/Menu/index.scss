@@ -4,7 +4,8 @@
     left: 0;
     width: 100%;
     background-color: var(--colors-ui-background-secondary);
-
+    z-index: 2;
+    
     &__list {
         display: flex;
         justify-content: space-between;
