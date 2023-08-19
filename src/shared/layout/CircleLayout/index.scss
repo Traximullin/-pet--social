@@ -1,0 +1,21 @@
+.red-circle, .blue-circle {
+    width: 60vw;
+    height: 35vh;
+    z-index: 1;
+    border-radius: 50%;
+    position: fixed;
+    opacity: .1;
+    filter: blur(80px);
+}
+
+.red-circle {
+    background-color: var(--colors-ui-secondary);
+    bottom: -80px;
+    right: -40px;
+}
+
+.blue-circle {
+    background-color: var(--colors-ui-primary);
+    top: -80px;
+    left: -40px;
+}
