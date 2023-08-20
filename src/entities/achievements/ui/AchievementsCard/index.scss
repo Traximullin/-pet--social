@@ -1,25 +1,29 @@
 
 .achievements-card {
-    display: flex;
-    flex-direction: column;
+    position: relative;
     gap: 1rem;
-        
-    width: 200px;
-    height: 250px;
+    background-color: var(--colors-ui-primary);
+    
+    width: 120px;
+    height: 120px;
+    
     border-radius: 12px;
-    padding: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
 
     &__image {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        max-height: 100%;
+        width: 60px;
+        height: 60px;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
     &__title {
-        font-size: 18px;
+        display: flex;
+        text-align: left;
+        padding: 6px 12px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
     }
