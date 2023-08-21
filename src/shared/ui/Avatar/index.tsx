@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IAvatar } from "./interface"
+import { type IAvatar } from "./types"
 
 const Avatar: FC<IAvatar> = (props) => {
     const { size, ...othersProps } = props

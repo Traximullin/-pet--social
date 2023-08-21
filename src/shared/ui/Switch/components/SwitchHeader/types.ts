@@ -1,4 +1,4 @@
-import { type TSwitchItem } from "../../interface"
+import { type TSwitchItem } from "../../types"
 
 export interface ISwitchHeader {
     content: TSwitchItem

@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IContent } from "./interface"
+import { type IContent } from "./types"
 
 const Content: FC<IContent> = (props) => {
     const { ...othersProps } = props

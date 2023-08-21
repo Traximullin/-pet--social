@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IForm } from "./interface"
+import { type IForm } from "./types"
 
 const Form: FC<IForm> = (props) => {
     const { className, ...othersProps } = props

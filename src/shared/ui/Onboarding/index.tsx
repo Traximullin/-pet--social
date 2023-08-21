@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IOnboarding } from "./interface"
+import { type IOnboarding } from "./types"
 import Pager from "../Pager"
 import { usePagerView } from "shared/hooks"
 import Button from "../Button"

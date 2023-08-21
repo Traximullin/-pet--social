@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type ISpace } from "./interface"
+import { type ISpace } from "./types"
 
 const Space: FC<ISpace> = (props) => {
     const { gap, flexDirection, justifyContent, alignItems, flexWrap, ...othersProps } = props
