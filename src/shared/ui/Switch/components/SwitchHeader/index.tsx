@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type ISwitchHeader } from "./interface"
+import { type ISwitchHeader } from "./types"
 
 const SwitchHeader: FC<ISwitchHeader> = (props) => {
     const { content, handleSwitchPage, } = props

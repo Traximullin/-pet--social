@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IGrid } from "./interface"
+import { type IGrid } from "./types"
 
 const Grid: FC<IGrid> = (props) => {
     const { gridTemplateColumns, gap, ...othersProps } = props

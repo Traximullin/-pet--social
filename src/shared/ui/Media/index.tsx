@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IMedia } from "./interface"
+import { type IMedia } from "./types"
 
 const Media: FC<IMedia> = (props) => {
     const { className, ...othersProps } = props

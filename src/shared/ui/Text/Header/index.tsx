@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type ITextHeader } from "./interface"
+import { type ITextHeader } from "./types"
 
 const TextHeader: FC<ITextHeader> = (props) => {
     const { position, ...othersProps } = props

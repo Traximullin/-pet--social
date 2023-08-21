@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type ICard } from "./interface"
+import { type ICard } from "./types"
 
 const Card: FC<ICard> = (props) => {
     const { className, children, ...othersProps } = props

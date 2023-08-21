@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IButton } from "./interface"
+import { type IButton } from "./types"
 
 const Button: FC<IButton> = (props) => {
     const { size, className, ...othersProps } = props

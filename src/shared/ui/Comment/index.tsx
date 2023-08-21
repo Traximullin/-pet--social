@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IComment } from "./interface"
+import { type IComment } from "./types"
 import { Avatar } from ".."
 
 const Comment: FC<IComment> = () => {

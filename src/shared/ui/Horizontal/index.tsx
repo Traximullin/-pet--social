@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IHorizontal } from "./interface"
+import { type IHorizontal } from "./types"
 
 const Horizontal: FC<IHorizontal> = (props) => {
     const { children, } = props

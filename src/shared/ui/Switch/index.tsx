@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type ISwitch } from "./interface"
+import { type ISwitch } from "./types"
 import useSwitch from "shared/hooks/useSwitch"
 import SwitchHeader from "./components/SwitchHeader"
 
