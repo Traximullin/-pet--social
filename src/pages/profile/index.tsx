@@ -1,28 +1,15 @@
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Avatar, Content, Grid, List, Media, Space, Switch } from "shared/ui"
+import { Content, Grid, List, Media, Switch } from "shared/ui"
 import { AchievementsCard } from "entities/achievements/ui"
-import { ProfileCounter, UserInfo } from "entities/profile/ui"
 import { TapeCard } from "entities/tape/ui"
+import { Header } from "widgets/profile/Header"
 
 const ProfilePage: FC = () => {
     return (
         <BaseLayout>
             <Content>
-                <Space gap="32px" alignItems="center">
-                    <Avatar />
-                    <Space gap="32px">
-                        <ProfileCounter title="Posts">
-                            54
-                        </ProfileCounter>
-                        <ProfileCounter title="Friends">
-                            154
-                        </ProfileCounter>
-                    </Space>
-                </Space>
-                <UserInfo description="Hello, i am test user">
-                    Ivanov Ivan
-                </UserInfo>
+                <Header />
             </Content>
             <Switch content={{
                 list:
