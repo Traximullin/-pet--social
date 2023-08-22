@@ -1,6 +1,7 @@
 import { type FC } from "react"
 import { Route, Routes } from "react-router-dom"
-import { ContentCreate, EPage, HomePage, ProfilePage, SignInPage, SignUpPage, TreePage } from "./pages"
+import { ContentCreate, EPage, HomePage, SignInPage, SignUpPage, TreePage } from "./pages"
+import { ProfilePage } from "services/profile/pages/main"
 
 const Routing: FC = () => {
     return (
