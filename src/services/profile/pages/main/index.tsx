@@ -1,9 +1,9 @@
-import { type FC } from "react"
-import { BaseLayout } from "shared/layout"
-import { Content, Grid, List, Media, Switch } from "shared/ui"
 import { AchievementsCard } from "entities/achievements/ui"
 import { TapeCard } from "entities/tape/ui"
-import { Header } from "widgets/profile/Header"
+import { type FC } from "react"
+import { Header } from "services/profile/widgets/Header"
+import { BaseLayout } from "shared/layout"
+import { Content, Grid, List, Media, Switch } from "shared/ui"
 
 const ProfilePage: FC = () => {
     return (
@@ -36,4 +36,4 @@ const ProfilePage: FC = () => {
     )
 }
 
-export default ProfilePage
+export { ProfilePage }
