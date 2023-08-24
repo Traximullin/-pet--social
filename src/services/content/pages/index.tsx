@@ -1,6 +1,6 @@
 import { type FC } from "react"
-import { BackButton, Camera, SendContent } from "entities/content/ui"
-import { ContentLayout } from "entities/content/layout"
+import { ContentLayout } from "../shared/layout"
+import { BackButton, Camera, SendContent } from "../shared/ui"
 
 const ContentCreate: FC = () => {
 

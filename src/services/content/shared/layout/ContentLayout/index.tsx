@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IContentLayout } from "./interface"
+import { type IContentLayout } from "./types"
 
 const ContentLayout: FC<IContentLayout> = (props) => {
     const { children, backButton, control, ...othersProps } = props
@@ -18,4 +18,4 @@ const ContentLayout: FC<IContentLayout> = (props) => {
     )
 }
 
-export default ContentLayout
+export { ContentLayout }
