@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { useCamera } from "entities/content/hooks"
+import { useCamera } from "services/content/hooks"
 
 const Camera: FC = () => {
     const videoRef = useCamera()
