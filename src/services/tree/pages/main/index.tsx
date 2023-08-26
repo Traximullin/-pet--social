@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { Tree } from "entities/tree/ui"
+import { Tree } from "shared/ui"
 
 const TreePage: FC = () => {
 
@@ -11,4 +11,4 @@ const TreePage: FC = () => {
     )
 }
 
-export default TreePage
+export { TreePage }

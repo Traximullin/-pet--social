@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import TreeItem from "../TreeItem"
+import TreeItem from "./components/TreeItem"
 
 const Tree: FC = () => {
     return (
