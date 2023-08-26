@@ -1,0 +1,17 @@
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    &__addition {
+        color: #bfbfbf;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
