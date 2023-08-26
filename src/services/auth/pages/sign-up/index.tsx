@@ -1,6 +1,6 @@
 import { type FC } from "react"
-import { SignLayout } from "shared/layout"
-import { SignUpForm } from "entities/sign-up/form"
+import { SignUpForm } from "services/auth/entities/SignUpForm"
+import { SignLayout } from "services/auth/shared/layout/SignLayout"
 
 const SignUpPage: FC = () => {
     return (
@@ -10,4 +10,4 @@ const SignUpPage: FC = () => {
     )
 }
 
-export default SignUpPage
+export { SignUpPage }
