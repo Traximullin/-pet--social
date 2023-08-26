@@ -1,8 +1,8 @@
 import { type FC } from "react"
 import "./index.scss"
 import { useNavigate } from "react-router"
-import { EPage } from "pages/pages"
 import { Button, Form, Input, Text } from "shared/ui"
+import { EPage } from "packages/routing/routing"
 
 const SignInForm: FC = () => {
     const navigation = useNavigate()
