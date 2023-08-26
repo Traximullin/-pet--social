@@ -1,7 +1,7 @@
 import { type FC } from "react"
 import { NavLink } from "react-router-dom"
 import "./index.scss"
-import { EPage } from "pages/pages"
+import { EPage } from "packages/routing/routing"
 
 const Menu: FC = () => {
     return (

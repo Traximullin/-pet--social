@@ -14,4 +14,4 @@ const ContentCreate: FC = () => {
     )
 }
 
-export default ContentCreate
+export { ContentCreate }

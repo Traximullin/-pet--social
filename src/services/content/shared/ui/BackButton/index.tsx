@@ -1,4 +1,4 @@
-import { EPage } from "pages/pages"
+import { EPage } from "packages/routing/routing"
 import { type FC } from "react"
 import { useNavigate } from "react-router"
 import { Button } from "shared/ui"
