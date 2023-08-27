@@ -1,8 +1,8 @@
 import { type FC } from "react"
 import "./index.scss"
 import { type ISwitch } from "./types"
-import useSwitch from "shared/hooks/useSwitch"
 import SwitchHeader from "./components/SwitchHeader"
+import { useSwitch } from "packages/ui-kit/hooks"
 
 const Switch: FC<ISwitch> = (props) => {
     const { content, } = props

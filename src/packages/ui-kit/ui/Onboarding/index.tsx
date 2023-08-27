@@ -3,8 +3,8 @@ import "./index.scss"
 import { type IOnboarding } from "./types"
 import Pager from "../Pager"
 import Button from "../Button"
-import { OnboardingLayout } from "shared/layout"
 import { usePagerView } from "packages/ui-kit/hooks"
+import { OnboardingLayout } from "packages/ui-kit/layout"
 
 const Onboarding: FC<IOnboarding> = (props) => {
     const { ...othersProps } = props

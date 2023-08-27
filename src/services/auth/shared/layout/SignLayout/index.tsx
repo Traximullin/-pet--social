@@ -1,7 +1,7 @@
 import { type FC } from "react"
 import "./index.scss"
 import { type ISignLayout } from "./interface"
-import { CircleLayout } from "shared/layout"
+import { CircleLayout } from "packages/ui-kit/layout"
 
 const SignLayout: FC<ISignLayout> = (props) => {
     const { children, ...othersProps } = props
