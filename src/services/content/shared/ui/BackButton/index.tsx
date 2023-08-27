@@ -1,7 +1,7 @@
 import { EPage } from "packages/routing/routing"
+import { Button } from "packages/ui-kit/ui"
 import { type FC } from "react"
 import { useNavigate } from "react-router"
-import { Button } from "shared/ui"
 
 const BackButton: FC = () => {
     const navigate = useNavigate()

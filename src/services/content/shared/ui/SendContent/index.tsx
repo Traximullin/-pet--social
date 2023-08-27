@@ -1,6 +1,6 @@
 import { type FC } from "react"
 import "./index.scss"
-import { Button } from "shared/ui"
+import { Button } from "packages/ui-kit/ui"
 
 const SendContent: FC = () => {
 

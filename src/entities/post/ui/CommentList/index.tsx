@@ -1,5 +1,6 @@
+import { List } from "packages/ui-kit/ui"
 import { type FC } from "react"
-import { Comment, List } from "shared/ui"
+import Comment from "./../../../../packages/ui-kit/ui/Comment/index"
 
 const CommentList: FC = () => {
     return (

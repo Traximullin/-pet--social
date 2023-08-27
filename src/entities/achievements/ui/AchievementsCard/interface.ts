@@ -1,4 +1,4 @@
-import { type ICard } from "shared/ui/Card/types"
+import { type ICard } from "packages/ui-kit/ui/Card/types"
 
 export interface IAchievementsCard extends ICard {
 }

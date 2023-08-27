@@ -1,9 +1,8 @@
 import { type FC } from "react"
 import "./index.scss"
 import { type ITapeCard } from "./interface"
-
-import Card from "shared/ui/Card"
-import { Avatar, CommentIcon, Details, Like, Media, Text } from "shared/ui"
+import Card from "./../../../../packages/ui-kit/ui/Card/index"
+import { Avatar, CommentIcon, Details, Like, Media, Text } from "packages/ui-kit/ui"
 
 const TapeCard: FC<ITapeCard> = (props) => {
     const { children, ...othersProps } = props

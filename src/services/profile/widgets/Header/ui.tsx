@@ -1,7 +1,7 @@
 import { type FC } from "react"
 import "./index.scss"
-import { Avatar } from "shared/ui"
 import { ProfileCounter, UserInfo } from "entities/profile/ui"
+import { Avatar } from "packages/ui-kit/ui"
 
 export const Header: FC = () => {
     return (

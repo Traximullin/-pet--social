@@ -1,8 +1,8 @@
 import { type FC } from "react"
-import { Menu } from "shared/ui"
 import "./index.scss"
 import { type IBaseLayout } from "./interface"
 import CircleLayout from "../CircleLayout"
+import { Menu } from "packages/ui-kit/ui"
 
 const BaseLayout: FC<IBaseLayout> = (props) => {
     const { children, ...othersProps } = props
