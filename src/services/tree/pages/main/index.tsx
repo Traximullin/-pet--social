@@ -1,6 +1,6 @@
+import { BaseLayout } from "packages/ui-kit/layout"
 import { Tree } from "packages/ui-kit/ui"
 import { type FC } from "react"
-import { BaseLayout } from "shared/layout"
 
 const TreePage: FC = () => {
 

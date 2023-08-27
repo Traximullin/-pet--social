@@ -1,9 +1,9 @@
 import { AchievementsCard } from "entities/achievements/ui"
 import { TapeCard } from "entities/tape/ui"
+import { BaseLayout } from "packages/ui-kit/layout"
 import { Content, Grid, List, Media, Switch } from "packages/ui-kit/ui"
 import { type FC } from "react"
 import { Header } from "services/profile/widgets/Header"
-import { BaseLayout } from "shared/layout"
 
 const ProfilePage: FC = () => {
     return (
