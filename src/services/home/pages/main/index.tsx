@@ -1,7 +1,7 @@
 import { TapeCard } from "entities/tape/ui"
+import { List } from "packages/ui-kit/ui"
 import { type FC } from "react"
 import { BaseLayout } from "shared/layout"
-import { List } from "shared/ui"
 
 const HomePage: FC = () => {
     return (
