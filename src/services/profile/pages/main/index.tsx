@@ -1,5 +1,5 @@
-import { AchievementsCard } from "entities/achievements/ui"
-import { TapeCard } from "entities/tape/ui"
+import { AchievementsCard } from "packages/social-content/shared/ui/AchievementsCard"
+import { TapeCard } from "packages/social-content/shared/ui/TapeCard"
 import { BaseLayout } from "packages/ui-kit/layout"
 import { Content, Grid, List, Media, Switch } from "packages/ui-kit/ui"
 import { type FC } from "react"

@@ -1,7 +1,7 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type ITapeCard } from "./interface"
-import Card from "./../../../../packages/ui-kit/ui/Card/index"
+import { type ITapeCard } from "./types"
+import Card from "../../../../ui-kit/ui/Card/index"
 import { Avatar, CommentIcon, Details, Like, Media, Text } from "packages/ui-kit/ui"
 
 const TapeCard: FC<ITapeCard> = (props) => {
@@ -32,4 +32,4 @@ const TapeCard: FC<ITapeCard> = (props) => {
     )
 }
 
-export default TapeCard
+export { TapeCard }

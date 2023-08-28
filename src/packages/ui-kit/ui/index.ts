@@ -1,5 +1,6 @@
 export { default as Avatar } from "./Avatar"
 export { default as Button } from "./Button"
+export { default as Card } from "./Card"
 export { default as Content } from "./Content"
 export { default as Details } from "./Details"
 export { default as Comment } from "./Comment"
