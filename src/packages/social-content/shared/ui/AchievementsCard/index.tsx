@@ -1,8 +1,8 @@
 import { type FC } from "react"
 import "./index.scss"
-import { type IAchievementsCard } from "./interface"
+import { type IAchievementsCard } from "./types"
 import { treeSvg } from "assets/svg"
-import Card from "./../../../../packages/ui-kit/ui/Card/index"
+import { Card } from "packages/ui-kit/ui"
 
 const AchievementsCard: FC<IAchievementsCard> = (props) => {
     const { children, ...othersProps } = props
@@ -19,4 +19,4 @@ const AchievementsCard: FC<IAchievementsCard> = (props) => {
     )
 }
 
-export default AchievementsCard
+export { AchievementsCard }

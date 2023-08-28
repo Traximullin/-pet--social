@@ -1,4 +1,4 @@
-import { TapeCard } from "entities/tape/ui"
+import { TapeCard } from "packages/social-content/shared/ui/TapeCard"
 import { BaseLayout } from "packages/ui-kit/layout"
 import { List } from "packages/ui-kit/ui"
 import { type FC } from "react"

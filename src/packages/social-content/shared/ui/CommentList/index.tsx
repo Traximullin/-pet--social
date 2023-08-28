@@ -1,6 +1,6 @@
 import { List } from "packages/ui-kit/ui"
 import { type FC } from "react"
-import Comment from "./../../../../packages/ui-kit/ui/Comment/index"
+import Comment from "../../../../ui-kit/ui/Comment/index"
 
 const CommentList: FC = () => {
     return (
@@ -13,4 +13,4 @@ const CommentList: FC = () => {
     )
 }
 
-export default CommentList
+export { CommentList }
