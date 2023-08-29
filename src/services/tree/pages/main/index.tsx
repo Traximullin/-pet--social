@@ -1,5 +1,5 @@
+import { Tree } from "packages/tree"
 import { BaseLayout } from "packages/ui-kit/layout"
-import { Tree } from "packages/ui-kit/ui"
 import { type FC } from "react"
 
 const TreePage: FC = () => {
