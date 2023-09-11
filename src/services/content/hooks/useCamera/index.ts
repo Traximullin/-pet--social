@@ -20,16 +20,24 @@ const useCamera: TUseCamera = () => {
                 console.error("Error accessing camera:", error)
             })
 
+    }, [])
+
+    useEffect(() => {
         return () => {
             if (videoRef.current) {
-                const stream = videoRef.current.srcObject as MediaStream
-                const tracks = stream?.getTracks()
-                tracks?.forEach((track) => {
-                    track.stop()
-                })
+                const video = videoRef.current
+                const stream = video.srcObject as MediaStream
+                console.log("stop camera")
+                if (stream) {
+                    const tracks = stream.getTracks()
+
+                    tracks.forEach((track) => {
+                        track.stop()
+                    })
+                }
             }
         }
-    }, [])
+    }, [videoRef.current])
 
     return videoRef
 }

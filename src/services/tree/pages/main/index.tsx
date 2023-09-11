@@ -19,7 +19,7 @@ const TreePage: FC = () => {
 
     return (
         <BaseLayout>
-            <Tree />
+            <Tree data={[]} linksData={[]} />
         </BaseLayout>
     )
 }
