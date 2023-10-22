@@ -1,7 +1,12 @@
 import type { Store, Event } from "effector"
 
-export interface CreateFieldsFactory {
+export interface CreateFieldsFactory<T, R> {
     resetFields: Event<void>
-    setFields: Event<void>
-    $fields: Store<null>
+    setFields: Event<R>
+    $fields: Store<T | null>
+}
+
+export interface SetFields<R> {
+    key: string
+    value: string
 }
