@@ -12,7 +12,7 @@ function List <T> (props: IList<T>) {
     return (
         <section className={currentClasses.join(" ")} {...othersProps}>
             {
-                data.length
+                data?.length
                     ? data.map(item => renderItem(item))
                     : <p className="list__no-data">Нет данных</p>
             }
