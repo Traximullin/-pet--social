@@ -1,22 +1,16 @@
 import { createEffect, createEvent, restore, sample } from "effector"
+import { resetTape } from "services/home/entities/tape"
+import { getTape as getTapeRequest } from "services/home/shared/api"
 
 export const getTape = createEvent()
 
 export const getTapeFx = createEffect(async () => {
-    const mock = async (): Promise<any> => {
-        return await new Promise(resolve => {
-            setTimeout(() => {
-                resolve({ test: 3000, })
-            }, 3000)
-        })
-    }
-
-    const data = await mock()
+    const data = await getTapeRequest()
 
     return data
 })
 
-export const $getTapeError = restore(getTapeFx.failData, null).reset(null)
+export const $getTapeError = restore(getTapeFx.failData, null).reset(resetTape)
 export const $getTapeLoading = getTapeFx.pending
 export const getTapeDone = getTapeFx.doneData
 
