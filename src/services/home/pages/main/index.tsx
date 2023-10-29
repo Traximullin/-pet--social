@@ -1,17 +1,22 @@
-import { TapeCard } from "packages/social-content/shared/ui/TapeCard"
+import { useEffect, type FC } from "react"
+import { useUnit } from "effector-react"
+
 import { BaseLayout } from "packages/ui-kit/layout"
-import { List } from "packages/ui-kit/ui"
-import { type FC } from "react"
+
+import { ListTape } from "services/home/features/get-tape"
+
+import { getData } from "./model/get-data"
 
 const HomePage: FC = () => {
+    const onGetData = useUnit(getData)
+
+    useEffect(() => {
+        onGetData()
+    }, [onGetData])
+
     return (
         <BaseLayout>
-            <List
-                data={[1, 2, 3, 4]}
-                renderItem={(item) => (
-                    <TapeCard>{item}</TapeCard>
-                )}
-            />
+            <ListTape />
         </BaseLayout>
     )
 }
