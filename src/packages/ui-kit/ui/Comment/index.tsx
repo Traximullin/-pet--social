@@ -7,7 +7,7 @@ const Comment: FC<IComment> = () => {
     return (
         <article className="comment">
             <div className="comment__header">
-                <Avatar size="small" />
+                <Avatar size="medium" />
                 <p>test_1337</p>
                 <p className="comment__publish-time">22.02.2002</p>
             </div>
