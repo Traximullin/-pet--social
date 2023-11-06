@@ -1,13 +1,16 @@
 .avatar {
     width: 68px;
     height: 68px;
-    border: 1px solid var(--colors-ui-primary);
     padding: 2px;
     object-fit: cover;
     border-radius: 50%;
     
     &_size {
         &_small {
+            width: 28px;
+            height: 28px;
+        }
+        &_medium {
             width: 38px;
             height: 38px;
         }
