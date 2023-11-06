@@ -2,10 +2,8 @@ import { type FC } from "react"
 import "./index.scss"
 import { useUnit } from "effector-react"
 import { useNavigate } from "react-router"
-
 import { EPage } from "packages/routing/routing"
 import { Button, Form, Input, Text } from "packages/ui-kit/ui"
-
 import { $form, setFields } from "./model/set-fields"
 import type { FieldsType } from "./types"
 
