@@ -11,9 +11,14 @@
     background-color: var(--colors-ui-primary);
     border-radius: 7px;
 
+    &:active {
+        background-color:  var(--colors-ui-base);
+    }
+
     &_sz {
         &_small {
             width: max-content;
         }
     }
+
 }
