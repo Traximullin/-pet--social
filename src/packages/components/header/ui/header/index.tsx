@@ -2,6 +2,8 @@ import { type FC } from "react"
 import classes from "./index.module.scss"
 import { Avatar } from "packages/ui-kit/ui"
 
+import { Notification } from "../../features/get-notification"
+
 const Header: FC = () => {
     return (
         <header className={classes["header"]}>
@@ -11,7 +13,7 @@ const Header: FC = () => {
             </div>
             <div className={classes["header__information"]}>
                 <p>Поиск</p>
-                <p>Увед.</p>
+                <Notification />
             </div>
         </header>
     )
