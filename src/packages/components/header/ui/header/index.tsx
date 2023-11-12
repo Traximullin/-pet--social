@@ -3,6 +3,7 @@ import classes from "./index.module.scss"
 import { Avatar } from "packages/ui-kit/ui"
 
 import { Notification } from "../../features/get-notification"
+import { Search } from "../../features/search"
 
 const Header: FC = () => {
     return (
@@ -12,7 +13,7 @@ const Header: FC = () => {
                 <p>Главная</p>
             </div>
             <div className={classes["header__information"]}>
-                <p>Поиск</p>
+                <Search />
                 <Notification />
             </div>
         </header>
