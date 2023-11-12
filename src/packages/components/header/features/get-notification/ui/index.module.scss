@@ -1,0 +1,16 @@
+.notification {
+    position: relative;
+    width: 24px;
+    height: 24px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: var(--colors-ui-secondary);
+        bottom: 2px;
+        right: 5.5px;
+    }
+}
