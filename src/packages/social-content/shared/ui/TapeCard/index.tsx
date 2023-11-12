@@ -2,7 +2,8 @@ import { type FC } from "react"
 import "./index.scss"
 import { type ITapeCard } from "./types"
 import Card from "../../../../ui-kit/ui/Card/index"
-import { Avatar, CommentIcon, Details, Like, Media, Text } from "packages/ui-kit/ui"
+import { Avatar, Details, Media, Text } from "packages/ui-kit/ui"
+import { Icon } from "packages/ui-kit/ui/Icon"
 
 const TapeCard: FC<ITapeCard> = (props) => {
     const { children, ...othersProps } = props
@@ -22,8 +23,8 @@ const TapeCard: FC<ITapeCard> = (props) => {
             <Media/>
             <div className="tape-card__control">
                 <div className="tape-card__actions">
-                    <Like/>
-                    <CommentIcon />
+                    <Icon name="i-like" alt="Понравилось"/>
+                    <Icon name="i-comment" alt="Комментарий"/>
                 </div>
                 <div>2</div>
                 <div>3</div>
