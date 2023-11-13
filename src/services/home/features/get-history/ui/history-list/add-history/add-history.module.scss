@@ -1,0 +1,29 @@
+.add-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem; 
+    color: var(--colors-ui-text);
+
+    &__avatar, &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__avatar {
+        position: relative;
+        border-radius: 50%;
+    }
+
+    &__icon {
+        bottom: 2px;
+        right: 0;
+        width: 20px;
+        border: 2px solid var(--colors-ui-background);
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--colors-ui-secondary);
+        position: absolute;
+    }
+}

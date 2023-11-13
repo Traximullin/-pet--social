@@ -6,6 +6,7 @@ import { BaseLayout } from "packages/ui-kit/layout"
 import { ListTape } from "services/home/features/get-tape"
 
 import { getData } from "./model/get-data"
+import { HistoryList } from "services/home/features/get-history/ui/history-list"
 
 const HomePage: FC = () => {
     const onGetData = useUnit(getData)
@@ -16,6 +17,7 @@ const HomePage: FC = () => {
 
     return (
         <BaseLayout>
+            <HistoryList />
             <ListTape />
         </BaseLayout>
     )

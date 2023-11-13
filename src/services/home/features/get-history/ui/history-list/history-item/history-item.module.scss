@@ -1,0 +1,15 @@
+.history-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem; 
+    color: var(--colors-ui-secondary);
+    
+    &__avatar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        outline: 2px solid var(--colors-ui-secondary);
+    }
+}
