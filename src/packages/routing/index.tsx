@@ -7,6 +7,7 @@ import { ContentCreate } from "services/content/pages"
 import { TreePage } from "services/tree/pages/main"
 import { SignInPage } from "services/auth/pages/sign-in"
 import { SignUpPage } from "services/auth/pages/sign-up"
+import { MainPage } from "services/comment/pages/main"
 
 const Routing: FC = () => {
     return (
@@ -17,6 +18,7 @@ const Routing: FC = () => {
             <Route path={EPage.PROFILE} element={<ProfilePage />} />
             <Route path={EPage.TREE} element={<TreePage />} />
             <Route path={EPage.CREATE_CONTENT} element={<ContentCreate />} />
+            <Route path={EPage.COMMENT} element={<MainPage />} />
         </Routes>
     )
 }
