@@ -6,4 +6,5 @@ export enum EPage {
     TREE = "/tree",
     CONTENT = "/content",
     CREATE_CONTENT = "/content/create",
+    COMMENT = "/comment"
 }
