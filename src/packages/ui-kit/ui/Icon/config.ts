@@ -6,4 +6,8 @@ export const ICONS: IconConfig = {
     "i-search": icons.searchSvg,
     "i-comment": icons.commentSvg,
     "i-like": icons.likeSvg,
+    "i-home": icons.homeSvg,
+    "i-tree": icons.treeSvg,
+    "i-content": icons.contentSvg,
+    "i-profile": icons.profileSvg,
 }
