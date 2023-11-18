@@ -1,0 +1,30 @@
+.menu-item {
+    height: 100%;
+    width: 100%;
+    
+    font-size: 12px;
+    border-top: 1px solid var(--colors-secondary-text);
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 4px;
+        gap: 2px;
+        color: var(--colors-secondary-text);
+        font-weight: 600;
+        filter: 
+            brightness(0) saturate(100%) invert(67%) 
+            sepia(4%) saturate(626%) hue-rotate(175deg) 
+            brightness(93%) contrast(86%);
+
+        &_active {
+            color: var(--colors-ui-text);
+            filter: 
+                brightness(0) saturate(100%) invert(97%) 
+                sepia(33%) saturate(110%) hue-rotate(274deg) 
+                brightness(113%) contrast(90%);
+        }
+    }
+}

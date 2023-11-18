@@ -1,38 +1,33 @@
 import { type FC } from "react"
-import { NavLink } from "react-router-dom"
 import "./index.scss"
 import { EPage } from "packages/routing/routing"
+import { MenuItem } from "./components/menu-item"
 
 const Menu: FC = () => {
     return (
         <div className="menu">
             <nav>
                 <ul className="menu__list">
-                    <li className="menu__item">
-                        <NavLink to={EPage.HOME}>
-                            Главная
-                        </NavLink>
-                    </li>
-                    <li className="menu__item">
-                        <NavLink to={EPage.TREE}>
-                            Дерево
-                        </NavLink>
-                    </li>
-                    <li className="menu__item">
-                        <NavLink to={EPage.CREATE_CONTENT}>
-                            Создать
-                        </NavLink>
-                    </li>
-                    <li className="menu__item">
-                        <NavLink to={EPage.TREE}>
-                            Сообщения
-                        </NavLink>
-                    </li>
-                    <li className="menu__item">
-                        <NavLink to={EPage.PROFILE}>
-                            Профиль
-                        </NavLink>
-                    </li>
+                    <MenuItem
+                        text="Главная"
+                        to={EPage.HOME}
+                        iconName="i-home"
+                    />
+                    <MenuItem
+                        text="Дерево"
+                        to={EPage.TREE}
+                        iconName="i-tree"
+                    />
+                    <MenuItem
+                        text="Создать"
+                        to={EPage.CREATE_CONTENT}
+                        iconName="i-content"
+                    />
+                    <MenuItem
+                        text="Профиль"
+                        to={EPage.PROFILE}
+                        iconName="i-profile"
+                    />
                 </ul>
             </nav>
         </div>
