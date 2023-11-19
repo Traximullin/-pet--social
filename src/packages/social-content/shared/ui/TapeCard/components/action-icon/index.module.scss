@@ -1,0 +1,9 @@
+.action-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background-color: var(--colors-ui-background-secondary);
+    padding: 2px 6px;
+    border-radius: 6px;
+}
