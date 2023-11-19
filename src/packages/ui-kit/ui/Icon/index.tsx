@@ -13,4 +13,4 @@ const Icon: FC<IconProps> = (props) => {
     )
 }
 
-export { Icon }
+export { Icon, type IconProps }

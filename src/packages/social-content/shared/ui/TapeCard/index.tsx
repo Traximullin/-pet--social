@@ -3,7 +3,7 @@ import "./index.scss"
 import { type ITapeCard } from "./types"
 import Card from "../../../../ui-kit/ui/Card/index"
 import { Avatar, Details, Media, Text } from "packages/ui-kit/ui"
-import { Icon } from "packages/ui-kit/ui/Icon"
+import { ActionIcon } from "./components/action-icon"
 
 const TapeCard: FC<ITapeCard> = (props) => {
     const { children, ...othersProps } = props
@@ -23,11 +23,9 @@ const TapeCard: FC<ITapeCard> = (props) => {
             <Media/>
             <div className="tape-card__control">
                 <div className="tape-card__actions">
-                    <Icon name="i-like" alt="Понравилось"/>
-                    <Icon name="i-comment" alt="Комментарий"/>
+                    <ActionIcon name="i-like" alt="Понравилось" value={12} />
+                    <ActionIcon name="i-comment" alt="Комментарий" value={6} />
                 </div>
-                <div>2</div>
-                <div>3</div>
             </div>
         </Card>
     )
