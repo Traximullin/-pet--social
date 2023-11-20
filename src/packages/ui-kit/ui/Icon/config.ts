@@ -10,4 +10,5 @@ export const ICONS: IconConfig = {
     "i-tree": icons.treeSvg,
     "i-content": icons.contentSvg,
     "i-profile": icons.profileSvg,
+    "i-send": icons.sendSvg,
 }

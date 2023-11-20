@@ -4,7 +4,8 @@
     border-radius: 7px;
     background-color: var(--colors-ui-background-secondary);
     color: var(--colors-ui-text);
-
+    border: 1px solid var(--colors-ui-accent);
+    
     &::placeholder {
         color: var(--colors-ui-deactive);
     }
