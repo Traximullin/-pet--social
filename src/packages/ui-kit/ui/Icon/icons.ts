@@ -6,9 +6,10 @@ import profileSvg from "assets/icon/profile.svg"
 import treeSvg from "assets/icon/tree.svg"
 import contentSvg from "assets/icon/content.svg"
 import homeSvg from "assets/icon/home.svg"
+import sendSvg from "assets/icon/send.svg"
 
 export {
     notificationSvg, searchSvg, commentSvg,
     likeSvg, profileSvg, treeSvg, contentSvg,
-    homeSvg
+    homeSvg, sendSvg
 }
