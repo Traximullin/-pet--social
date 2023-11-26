@@ -9,7 +9,7 @@ const ContentCreate: FC = () => {
     const capture = useCallback(() => {
         if (cameraRef.current) {
             const imageSrc = cameraRef.current.getScreenshot()
-
+            console.log("imageSrc", imageSrc)
             return imageSrc
         }
 
