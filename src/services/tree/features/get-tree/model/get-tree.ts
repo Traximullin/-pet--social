@@ -1,4 +1,5 @@
 import { createEffect, createEvent, restore, sample } from "effector"
+import { $tree } from "services/tree/entities/tree"
 
 export const getTree = createEvent()
 
@@ -23,4 +24,9 @@ export const getTreeDone = getTreeFx.doneData
 sample({
     clock: getTree,
     target: getTreeFx,
+})
+
+sample({
+    clock: getTreeDone,
+    target: $tree,
 })
