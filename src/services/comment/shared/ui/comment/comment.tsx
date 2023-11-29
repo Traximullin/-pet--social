@@ -6,10 +6,10 @@ import classes from "./index.module.scss"
 
 const Comment: FC = () => {
     return (
-        <section className={classes["comment"]}>
+        <div className={classes["comment"]}>
             <Input placeholder="Комментарий" />
             <Icon name="i-send" />
-        </section>
+        </div>
     )
 }
 
