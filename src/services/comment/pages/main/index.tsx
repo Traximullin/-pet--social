@@ -1,15 +1,17 @@
 import { type FC } from "react"
 import { BaseLayout } from "packages/ui-kit/layout"
 
-import { Comment } from "../../shared/ui/comment"
+import { SendComment } from "services/comment/features/send-comment"
 
+import { CommentList } from "services/comment/shared/ui/comment-list"
 import { TapeCard } from "packages/social-content/shared/ui/TapeCard"
 
 const MainPage: FC = () => {
     return (
         <BaseLayout>
             <TapeCard />
-            <Comment />
+            <SendComment />
+            <CommentList />
         </BaseLayout>
     )
 }

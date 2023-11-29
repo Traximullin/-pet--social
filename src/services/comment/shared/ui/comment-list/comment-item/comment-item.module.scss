@@ -1,0 +1,24 @@
+.comment-item {
+    display: flex;
+    gap: 6px;
+    padding: 7px 14px;
+    border-bottom: 1px solid var(--colors-ui-background-secondary);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__info {
+        display: flex;
+        gap: 0.2rem;
+        p {
+            font-size: 12px;
+        }
+        span {
+            font-size: 10px;
+            color: var(--colors-secondary-text);
+        }
+    }
+}
