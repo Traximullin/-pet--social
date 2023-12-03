@@ -10,7 +10,6 @@ const SendContent: FC<SendContentProps> = (props) => {
         const imageSrc = capture()
 
         console.log("image:", imageSrc)
-        alert("send content!")
     }
 
     return (

@@ -5,7 +5,13 @@ import classes from "./show-content.module.scss"
 const ShowContent: FC<ShowContentProps> = (props) => {
 
     return (
-        <img className={classes["show-content"]} {...props}/>
+        <section className={classes["show-content"]}>
+            <div>Назад</div>
+            <img className={classes["show-content__content"]} {...props}/>
+            <div>
+                Отправить
+            </div>
+        </section>
     )
 }
 
