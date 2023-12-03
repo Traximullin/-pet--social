@@ -1,5 +1,18 @@
 .show-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--colors-ui-background);
     object-fit: cover;
     height: 100%;
     width: 100%;
+    padding: 7px 14px;
+
+    &__content {
+        border-radius: 14px;
+        object-fit: cover;
+        height: 50%;
+        width: 100%;
+    }
 }

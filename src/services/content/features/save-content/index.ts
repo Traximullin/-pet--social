@@ -1,1 +1,1 @@
-import { saveContent } from "./model/save-content"
+export { saveContent } from "./model/save-content"

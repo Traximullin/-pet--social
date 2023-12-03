@@ -1,15 +1,13 @@
-import { useRef, type FC, useCallback } from "react"
-import { ContentLayout } from "../shared/layout"
-import { BackButton, Camera, SendContent } from "../shared/ui"
-import { type CameraRef } from "../shared/ui/Camera/types"
 import { useUnit } from "effector-react"
-import { saveContent } from "../features/save-content/model/save-content"
-import { $content, ShowContent } from "../entities/content"
+import { useRef, type FC, useCallback } from "react"
+import { saveContent } from "services/content/features/save-content"
+import { ContentLayout } from "services/content/shared/layout"
+import { BackButton, Camera, SendContent } from "services/content/shared/ui"
+import { type CameraRef } from "services/content/shared/ui/Camera/types"
 
-const ContentCreate: FC = () => {
+const CreateContent: FC = () => {
     const cameraRef: CameraRef = useRef(null)
     const onSaveContent = useUnit(saveContent)
-    const content = useUnit($content)
 
     const capture = useCallback(() => {
         if (cameraRef.current) {
@@ -30,9 +28,9 @@ const ContentCreate: FC = () => {
         >
             {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
             {/* @ts-expect-error */}
-            {content ? <ShowContent src={content} alt="Контент" /> : <Camera ref={cameraRef as any} />}
+            <Camera ref={cameraRef as any} />
         </ContentLayout>
     )
 }
 
-export { ContentCreate }
+export { CreateContent }
